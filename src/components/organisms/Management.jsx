@@ -58,7 +58,7 @@ const Management = () => {
     }
   };
   return (
-    <section className="min-h-screen flex flex-col items-center p-4">
+    <section className="h-full flex flex-col items-center p-4">
       <h1 className="text-2xl font-bold mt-4">Manage Movies</h1>
 
       <form onSubmit={handleSubmit} className="w-full max-w-md mt-5 space-y-4">
