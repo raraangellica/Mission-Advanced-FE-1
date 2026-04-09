@@ -1,0 +1,16 @@
+export const Genre = [
+  { name: "Aksi" },
+  { name: "Anak-anak" },
+  { name: "Anime" },
+  { name: "Britania" },
+  { name: "Drama" },
+  { name: "Fantasi Ilmiah & Fantasi" },
+  { name: "Kejahatan" },
+  { name: "KDrama" },
+  { name: "Komedi" },
+  { name: "Petualangan" },
+  { name: "Perang" },
+  { name: "Romantis" },
+  { name: "Sains & Alam" },
+  { name: "Thriller" },
+];
