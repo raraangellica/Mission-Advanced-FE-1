@@ -6,7 +6,7 @@ import { Bantuan } from "../data/Bantuan";
 const Footer = () => {
   return (
     <footer className="flex flex-col gap-5 items-center p-5 mt-[27px] bg-[rgba(24,26,28,1)] w-min-90 w-max-360 h-48.5 md:h-71 border border-solid border-[rgba(231,227,252,0.23) mt-[27px] md:px-20 md:py-15 md:mt-20 md:flex-row md:justify-between">
-      <div className="flex flex-col w-full min-w-80 max-w-320 h-14.5 gap-4 md:gap-6.5 md:w-[251px] md:h-[71px]">
+      <div className="flex flex-col justify-center w-full max-w-320 h-14.5 gap-4 md:gap-6.5 md:w-[251px] md:h-full">
         <img
           src={LogoForm}
           alt="logo"
@@ -16,8 +16,8 @@ const Footer = () => {
           &copy; 2023 Chill All Rights Reserved.
         </p>
       </div>
-      <div className="flex flex-col min-w-80 max-w-320 h-14 gap-2 w-full  md:mt-0 md:h-41 md:flex-row md:justify-between ]">
-        <div className="md:w-128.5">
+      <div className="flex flex-col h-full gap-2 w-full md:mt-0 md:h-41 md:flex-row md:justify-between ]">
+        <div className="w-full md:w-128.5">
           <NavLink
             href="#"
             className="flex justify-between font-medium text-base leading-[140%] tracking-[0.2px] mb-[15px] md:font-bold"
@@ -25,7 +25,7 @@ const Footer = () => {
             Genre <ChevronRight className="md:hidden" />
           </NavLink>
 
-          <div className="hidden md:flex flex-col flex-wrap md:gap-3 md:w-129 md:h-32 md:font-medium md:text-base md:leading-[140%] md:tracking-[0.2px] text-[rgba(193,194,196,1)] ">
+          <div className="hidden md:grid md:grid-flow-col grid-rows-4 md:gap-2 md:h-32 md:w-full md:font-medium md:text-base md:leading-[140%] md:tracking-[0.2px] text-[rgba(193,194,196,1)]">
             {Genre.map((i, index) => (
               <NavLink
                 key={index}
