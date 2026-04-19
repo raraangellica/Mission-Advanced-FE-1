@@ -14,7 +14,7 @@ const ContinueSection = () => {
   const sliderRef = useRef(null);
   const slide = (direction) => {
     const { current } = sliderRef;
-    const scrollAmount = 300; // Jarak geser dalam pixel
+    const scrollAmount = 300;
     if (direction === "left") {
       current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     } else {
@@ -26,7 +26,7 @@ const ContinueSection = () => {
       <h3 className="text-bold text-xl leading-[120%] tracking-normal md:text-[32px] md:leading-[110%]">
         Melanjutkan Tonton Film
       </h3>
-      <div className="relative group w-full max-w-[1280px] h-full object-contain mt-5 md:mt-8 ">
+      <div className="relative group w-full max-w-[1280px] h-auto object-contain mt-5 md:mt-8 ">
         {/* Tombol Navigasi Kiri */}
         <button
           onClick={() => slide("left")}
@@ -35,7 +35,6 @@ const ContinueSection = () => {
           <ArrowLeft />
         </button>
 
-        {/* Container List */}
         <div
           ref={sliderRef}
           className="flex gap-4 md:gap-6 w-full overflow-x-auto scroll-smooth md:overflow-hidden h-38 md:h-full snap-x snap-mandatory "
@@ -59,7 +58,6 @@ const ContinueSection = () => {
             ))}
         </div>
 
-        {/* Tombol Navigasi Kanan */}
         <button
           onClick={() => slide("right")}
           className="absolute rounded-full right-[-25px] right-0 top-1/2 -translate-y-1/2 z-10 bg-[rgba(47,51,52,1)] p-2 text-white opacity-0 group-hover:opacity-100 transition-opacity hidden md:block"
@@ -179,7 +177,6 @@ export const Section3 = () => {
             ))}
         </div>
 
-        {/* Tombol Navigasi Kanan */}
         <button
           onClick={() => slide("right")}
           className="absolute rounded-full right-[-25px] right-0 top-1/2 -translate-y-1/2 z-10 bg-[rgba(47,51,52,1)] p-2 text-white opacity-0 group-hover:opacity-100 transition-opacity hidden md:block"
@@ -195,7 +192,7 @@ export const Section4 = () => {
   const sliderRef = useRef(null);
   const slide = (direction) => {
     const { current } = sliderRef;
-    const scrollAmount = 300; // Jarak geser dalam pixel
+    const scrollAmount = 300;
     if (direction === "left") {
       current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     } else {
