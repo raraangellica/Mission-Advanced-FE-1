@@ -53,10 +53,7 @@ const HeroSection = () => {
         loop
         autoPlay
       >
-        <source
-          src="/public/videos/DutyAfterSchoolVideo.mp4"
-          type="video/mp4"
-        />
+        <source src="/videos/DutyAfterSchoolVideo.mp4" type="video/mp4" />
       </video>
       <div className="w-full h-full absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(16,18,19,0.86)] to-[rgba(24,26,28,1)]"></div>
       <div className="absolute flex flex-col gap-3 md:gap-10 z-20 px-5 bottom-10 min-w-[320px] max-w-[1280px] w-full md:bottom-20 md:px-20 ">

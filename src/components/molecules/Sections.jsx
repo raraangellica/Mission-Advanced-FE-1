@@ -26,7 +26,7 @@ const ContinueSection = () => {
       <h3 className="text-bold text-xl leading-[120%] tracking-normal md:text-[32px] md:leading-[110%]">
         Melanjutkan Tonton Film
       </h3>
-      <div className="relative group w-full max-w-[1280px] h-auto object-contain mt-5 md:mt-8 ">
+      <div className="relative group w-full max-w-[1280px] h-full object-contain mt-5 md:mt-8 ">
         {/* Tombol Navigasi Kiri */}
         <button
           onClick={() => slide("left")}
@@ -38,7 +38,7 @@ const ContinueSection = () => {
         {/* Container List */}
         <div
           ref={sliderRef}
-          className="flex gap-4 md:gap-6 w-full overflow-x-auto scroll-smooth md:overflow-hidden h-38 md:h-[40.5] snap-x snap-mandatory "
+          className="flex gap-4 md:gap-6 w-full overflow-x-auto scroll-smooth md:overflow-hidden h-38 md:h-full snap-x snap-mandatory "
         >
           {Movies.filter((movie) => movie.watched === true)
             .slice(0, 5)

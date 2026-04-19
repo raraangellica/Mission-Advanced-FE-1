@@ -21,7 +21,7 @@ export const ProfileMenu = () => {
         >
           <div className="w-5 h-5 md:w-10 md:h-10 rounded-full overflow-hidden border border-gray-600">
             <img
-              src="/public/images/DefaultProfile.png"
+              src="/images/DefaultProfile.png"
               alt="Profile Default"
               className="w-full h-full object-cover"
             />

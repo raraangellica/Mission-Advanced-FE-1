@@ -24,7 +24,10 @@ const Management = () => {
     e.preventDefault();
     if (!title.trim() || !star.trim()) return;
 
-    const movieData = { title, star: Number(star) };
+    const movieData = {
+      title,
+      star: Number(star).toFixed(1),
+    };
 
     if (editId) {
       await updateMovie(editId, movieData);
